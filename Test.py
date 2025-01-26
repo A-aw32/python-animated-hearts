@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib.animation import FuncAnimation
 
 fig, ax = plt.subplots()
-fig.set_facecolor('black')  
+fig.set_facecolor('red')  
 ax.set_aspect('equal')
 
 t = np.linspace(0, 2 * np.pi, 1000)
@@ -23,7 +23,7 @@ def update(i):
     for small_heart in small_hearts:
         small_heart.set_data([], [])
 
-    text.set_text("RAWAN")
+    text.set_text("HALA")
 
     angles = np.linspace(0, 2 * np.pi, len(small_hearts))
     radius = 20
